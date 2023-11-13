@@ -97,7 +97,7 @@ export const SignInView = observer(() => {
       <div className="hidden sm:block sm:fixed border-r-[0.5px] border-custom-border-200 h-screen w-[0.5px] top-0 left-20 lg:left-32" />
       <div className="fixed grid place-items-center bg-custom-background-100 sm:py-5 top-11 sm:top-12 left-7 sm:left-16 lg:left-28">
         <div className="grid place-items-center bg-custom-background-100">
-          <div className="h-[50px] w-[50px]">
+          <div className="h-[40px] w-[120px]">
             <img src={`${imagePrefix}/octek-logos/blue-without-text.png`} alt="Octek Logo" />
           </div>
         </div>

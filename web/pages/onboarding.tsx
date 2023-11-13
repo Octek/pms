@@ -20,8 +20,6 @@ import { InviteMembers, JoinWorkspaces, UserDetails, Workspace } from "component
 import { Spinner } from "components/ui";
 // images
 import BluePlaneLogoWithoutText from "public/octek-logos/blue-without-text.png";
-import BlackHorizontalLogo from "public/octek-logos/black-horizontal-with-blue-logo.png";
-import WhiteHorizontalLogo from "public/octek-logos/white-horizontal-with-blue-logo.png";
 // types
 import { ICurrentUserResponse, IUser, TOnboardingSteps } from "types";
 import type { NextPage } from "next";
@@ -165,20 +163,12 @@ const Onboarding: NextPage = () => {
           <div className="absolute border-b-[0.5px] sm:border-r-[0.5px] border-custom-border-200 h-[0.5px] w-full top-1/2 left-0 -translate-y-1/2 sm:h-screen sm:w-[0.5px] sm:top-0 sm:left-1/2 md:left-1/3 sm:-translate-x-1/2 sm:translate-y-0 z-10" />
           {step === 1 ? (
             <div className="absolute grid place-items-center bg-custom-background-100 px-3 sm:px-0 py-5 left-2 sm:left-1/2 md:left-1/3 sm:-translate-x-1/2 top-1/2 -translate-y-1/2 sm:translate-y-0 sm:top-12 z-10">
-              <div className="h-[50px] w-[50px]">
+              <div className="h-[40px] w-[120px]">
                 <Image src={BluePlaneLogoWithoutText} alt="Octek logo" />
               </div>
             </div>
           ) : (
-            <div className="absolute grid place-items-center bg-custom-background-100 px-3 sm:px-0 sm:py-5 left-5 sm:left-1/2 md:left-1/3 sm:-translate-x-[15px] top-1/2 -translate-y-1/2 sm:translate-y-0 sm:top-12 z-10">
-              <div className="h-[30px] w-[133px]">
-                {theme === "light" ? (
-                  <Image src={BlackHorizontalLogo} alt="Octek black logo" />
-                ) : (
-                  <Image src={WhiteHorizontalLogo} alt="Octek white logo" />
-                )}
-              </div>
-            </div>
+          <></>
           )}
           <div className="absolute sm:fixed text-custom-text-100 text-sm font-medium right-4 top-1/4 sm:top-12 -translate-y-1/2 sm:translate-y-0 sm:right-16 sm:py-5">
             {user?.email}

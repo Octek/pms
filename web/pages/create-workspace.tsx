@@ -71,7 +71,7 @@ const CreateWorkspace: NextPage = () => {
           <div className="relative h-1/6 flex-shrink-0 sm:w-2/12 md:w-3/12 lg:w-1/5">
             <div className="absolute border-b-[0.5px] sm:border-r-[0.5px] border-custom-border-200 h-[0.5px] w-full top-1/2 left-0 -translate-y-1/2 sm:h-screen sm:w-[0.5px] sm:top-0 sm:left-1/2 md:left-1/3 sm:-translate-x-1/2 sm:translate-y-0" />
             <div className="absolute grid place-items-center bg-custom-background-100 px-3 sm:px-0 sm:py-5 left-5 sm:left-1/2 md:left-1/3 sm:-translate-x-[15px] top-1/2 -translate-y-1/2 sm:translate-y-0 sm:top-12">
-              <div className="h-[50px] w-[177px]">
+              <div className="h-[40px] w-[120px]">
                 {theme === "light" ? (
                   <Image src={BlackHorizontalLogo} alt="Octek black logo" />
                 ) : (
